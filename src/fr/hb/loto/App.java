@@ -14,7 +14,6 @@ public class App {
 	private static int[] grilleDuJoueur = new int[NB_CASES_DE_LA_GRILLE];
 	private static Random random = new Random();
 	private static Scanner sc = new Scanner(System.in);
-	private static int nbBonsNumeros = 0;
 
 	public static void main(String[] args) {
 		
@@ -104,7 +103,7 @@ public class App {
 		
 		for(int number : correctTab) {
 			System.out.print("\u001B[32m");
-			System.out.println(number);
+			System.out.println("[" + number + "]" + " ");
 		}
 		System.out.println();
 		sc.close();
